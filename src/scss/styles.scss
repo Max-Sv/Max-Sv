@@ -1,0 +1,214 @@
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic);
+    @import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);
+    @import url(https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css);
+    $base-font: Roboto,
+    sans-serif;
+    html {
+        box-sizing: border-box;
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    a {
+        color: inherit;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+    a:focus,
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    body.dark {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $base-font;
+        font-size: 1rem;
+        line-height: 1.2;
+        margin: 0 0 0.75rem;
+        color: inherit;
+    }
+    
+    .text-h1 {
+        font-size: 4rem;
+        margin-bottom: 0.1rem;
+        font-weight: 500;
+    }
+    
+    .text-h2 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    
+    .text-h3 {
+        font-weight: 300;
+        font-size: 3rem;
+        text-align: center;
+        border-bottom: dashed 2px #CCCCCC;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .text-h4 {
+        margin-bottom: 0.1rem;
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .aside-block {
+        width: 25%;
+    }
+    
+    .main-block {
+        width: 75%;
+    }
+    
+    .header-container,
+    .intro__main,
+    .experience__main {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-container {
+        .header__contact-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    
+    p.quote {
+        font-size: 1.4rem;
+        font-style: italic;
+        padding: 1rem 2.5rem;
+        text-align: center
+    }
+    
+    p.text-center {
+        text-align: center
+    }
+    
+    p.quote {
+        font-size: 1.4rem;
+        font-style: italic;
+        padding: 1rem 2.5rem;
+        text-align: center
+    }
+    
+    .projects-item {
+        margin-top: 3rem;
+    }
+    
+    .projects__title {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .link {
+        display: inline-block;
+        font-size: 1.5rem;
+        color: inherit;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    .education__item span {
+        display: block;
+    }
+    
+    .container {
+        width: 1170px;
+        a.link {
+            font-size: 7.5rem;
+        }
+    }
+    
+    .download__block {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: block;
+        border-radius: 100px;
+        background-position: center;
+        -moz-box-shadow: inset 0 0 20px #636161;
+        -webkit-box-shadow: inset 0 0 20px #636161;
+        box-shadow: inset 0 0 20px #636161;
+        background-image: url("../asset/foto.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    @media (max-width: 1200px) {
+        .container {
+            width: 970px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .container {
+            width: 750px;
+        }
+        .header-container {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .intro__main {
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-block {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            width: 100%;
+        }
+        .header__left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-container {
+            align-items: center;
+        }
+        .header-container .header__contact-block {
+            align-items: center;
+        }
+        .container a.link {
+            font-size: 3.5rem;
+        }
+        .aside-block {
+            width: 100%;
+        }
+    }
